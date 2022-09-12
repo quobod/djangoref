@@ -1,0 +1,33 @@
+{% include 'top.html' %}
+
+<h1>Update member</h1>
+
+<form action="updaterecord/{{ mymember.id }}" method="post" class="row row-cols-sm-12 g-3 align-items-center">
+    {% csrf_token %}
+
+    <div class="col-12">
+        <div class="input-group">
+            <div class="input-group-text">First</div>
+            <input type="text" class="form-control" name="first" value="{{mymember.firstname}}" required>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="input-group">
+            <div class="input-group-text">Last</div>
+            <input type="text" class="form-control" name="last" value="{{mymember.lastname}}" required>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="input-group">
+            <div class="input-group-text">Email</div>
+            <input type="email" class="form-control" name="email" value="{{mymember.email}}" required>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </div>
+</form>
+{% include 'bottom.html' %}
