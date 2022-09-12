@@ -6,11 +6,11 @@
 
 ---
 
-- Development Platform
+- Platform
   - Ubuntu 22.04.1 LTS
 - IDE
   - Visual Studio Code v1.71.0
-- Module
+- Modules
   - Django v4.1.1
 
 ---
