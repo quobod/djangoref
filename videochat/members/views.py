@@ -14,7 +14,8 @@ def index(req):
 
 def add(req):
     template = loader.get_template("add.html")
-    return res(template.render({}, req))
+    context = {"title": "Add"}
+    return res(template.render(context, req))
 
 
 def addrecord(req):
@@ -35,9 +36,7 @@ def delete(req, id):
 def update(req, id):
     mymember = Members.objects.get(id=id)
     template = loader.get_template("update.html")
-    context = {
-        "mymember": mymember,
-    }
+    context = {"mymember": mymember, "title": "Update"}
     return res(template.render(context, req))
 
 
