@@ -1,4 +1,7 @@
 import os
+import mimetypes
+
+mimetypes.add_type("text/css", ".css", True)
 
 """
 Django settings for videochat project.
@@ -27,7 +30,7 @@ SECRET_KEY = "django-insecure-8h(6%r4279@(4if!y%w=u1qie1e#y#^5c-ptr4hv20pet5+qz#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
