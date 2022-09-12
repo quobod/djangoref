@@ -1,6 +1,12 @@
 {% include 'top.html' %}
 
-<h2>Members</h2>
+<div class="d-sm-inline-flex">
+    <h2 class="px-3">Members</h2>
+
+    <a class="text-secondary d-inline-flex" href="add/">
+        Add member
+    </a>
+</div>
 
 <div class="accordion" id="member-list">
     {% for x in mymembers %}
