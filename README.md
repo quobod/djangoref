@@ -20,9 +20,9 @@
 - _Install python3-virtualenv_
   - sudo apt install python3-virtualenv -y
 - _Initialize project directory_
-  - python -m venv <project-name>
+  - python -m venv project-name
     - _Change into the project directory_
-      - cd <project-name>
+      - cd project-name
     - _Activate the environment_
       - source bin/activate
     - _To deactivate the environment_
