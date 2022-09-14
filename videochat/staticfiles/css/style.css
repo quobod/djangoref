@@ -1,0 +1,8 @@
+#member-list {
+    height: 480px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    -webkit-backface-visibility: hidden;
+}
